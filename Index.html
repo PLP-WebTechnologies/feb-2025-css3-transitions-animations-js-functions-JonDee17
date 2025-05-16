@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 & JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Playground</h1>
+            <div class="theme-switcher">
+                <button id="light-theme">Light</button>
+                <button id="dark-theme">Dark</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="animation-section">
+                <h2>CSS Animations</h2>
+                
+                <div class="animation-box" id="pulse-box">
+                    <p>Hover to Pulse</p>
+                </div>
+                
+                <button id="spin-btn" class="animated-btn">Click to Spin</button>
+                
+                <div class="animation-box" id="color-change-box">
+                    <p>Color Transition</p>
+                </div>
+            </section>
+
+            <section class="preferences-section">
+                <h2>User Preferences</h2>
+                
+                <div class="preference-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your name">
+                    
+                    <label for="bg-color">Background Color:</label>
+                    <input type="color" id="bg-color" value="#ffffff">
+                    
+                    <label for="font-size">Font Size:</label>
+                    <select id="font-size">
+                        <option value="16px">Small</option>
+                        <option value="20px" selected>Medium</option>
+                        <option value="24px">Large</option>
+                    </select>
+                    
+                    <button id="save-prefs">Save Preferences</button>
+                    <button id="reset-prefs">Reset</button>
+                </div>
+            </section>
+
+            <section class="advanced-section">
+                <h2>Advanced Animations</h2>
+                
+                <div class="animation-container">
+                    <div class="animated-card" id="flip-card">
+                        <div class="card-front">
+                            <p>Front</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Back</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="flip-btn">Flip Card</button>
+                <button id="rainbow-btn">Rainbow Mode</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
